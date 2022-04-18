@@ -97,3 +97,23 @@ ou
 ```
 yarn dev
 ```
+
+```
+|-- app
+|-- shared
+|-- repository
+  |-- [+] services
+  |-- [+] models
+  |-- [/] mocks
+|-- core or pages
+  |-- [+] home
+  |-- [+] header
+  |-- [/] login
+  |-- [/] register
+|-- components
+  |-- [+] input
+  |-- [+] button
+  |-- [+] toast (message success, warn or error)
+|-- utils
+  |-- [+] validationErrors
+```

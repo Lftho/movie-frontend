@@ -1,4 +1,4 @@
-<h1>
+<!-- <h1>
   Welcome to {{ development || production }}!
 </h1>
 
@@ -7,7 +7,13 @@
     <li>{{ filme.adult ? 'acima de 18 anos' : 'menor de 18 anos' }}</li>
     <li>{{ filme.original_title }}</li>
     <li>{{ filme.overview }}</li>
-    <!-- <li>{{ filme.poster_path }}</li> -->
-    <img src="{{ filme.poster_path }}" alt="">
-  </ul>
-</div>
+<img src="{{ filme.poster_path }}" alt="">
+</ul>
+</div> -->
+
+<nav>
+  <a routerLink="home">Home component</a>
+  <a routerLink="lazy">Lady module</a>
+</nav>
+
+<router-outlet></router-outlet>

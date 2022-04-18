@@ -41,21 +41,22 @@ export class AppComponent {
     }
 
 
-    const servic =
-      this.http.get<BodyClient>(this.base_url)
-        ._subscribe(data => {
-          let teste = data.body;
-          teste = {
-            adult: teste.adult,
-            original_title: teste.original_title,
-            overview: teste.overview,
-            poster_path: `${environment.image_url}/${teste.poster_path}`,
-          }
+    //   const servic =
+    //     this.http.get<BodyClient>(this.base_url)
+    //       ._subscribe(data => {
+    //         let teste = data.body;
+    //         teste = {
+    //           adult: teste.adult,
+    //           original_title: teste.original_title,
+    //           overview: teste.overview,
+    //           poster_path: `${environment.image_url}/${teste.poster_path}`,
+    //         }
 
-          this.filmes.push(teste);
-        });
+    //         this.filmes.push(teste);
+    //       });
 
-    return servic;
+    //   return servic;
+    // }
   }
 }
 
